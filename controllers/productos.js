@@ -2,6 +2,10 @@ const { response, request } = require("express");
 
 const productos = [];
 
+const home = (req , res = response) => {
+    res.render('home');
+}
+
 const getProductos = (req , res = response) => {
 
     const tempProductoss = productos.filter(prd => prd.delete === false);
@@ -92,4 +96,5 @@ module.exports = {
     , getProducto
     , updateProducto
     , deleteProducto
+    , home
 }
