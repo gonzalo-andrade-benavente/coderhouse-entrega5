@@ -16,4 +16,10 @@ Utilizando la misma API de productos del proyecto entregable de la clase anterio
 
 </ul>
 
+Consigna 2: Plantilla pug. <b> No realizado por tiempo y trabajo</b>
+Consigna 3: Plantilla ejs. <b> No realizado por tiempo y trabajo</b>
+Consigna 4: Elijo handlebarss ya que su implementación me parece más fácil y ya lo conocía, cabe destacar que pug es muy usado y ejs es el gestor de plantillas por defecto.
+
+
+
 

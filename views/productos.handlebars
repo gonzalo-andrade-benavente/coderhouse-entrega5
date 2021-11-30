@@ -17,13 +17,26 @@
         </tr>
     </thead>
     <tbody>
-         {{#each productos}}
+
+
+        {{#if productos}}
+
+        {{#each productos}}
         <tr>
             <th scope="row">{{this.id}}</th>
             <td>{{this.title}}</td>
             <td>{{this.price}}</td>
             <td><img width="30" height="30" src="{{this.thumbnail}}" /> </td>
         </tr>
-         {{/each}}
+        {{/each}}
+
+        {{else}}
+
+        <tr>
+            <td colspan="4">No hay productos</td>
+        </tr>
+        {{/if}}
+
+
     </tbody>
 </table>
