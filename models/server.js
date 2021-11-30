@@ -42,6 +42,7 @@ class Server {
         });
 
         this.app.post('/productos', (req, res) => {
+            
             const { titleInput:title, priceInput:price, thumbnailInput:thumbnail } = req.body;
             const producto = {
                 title,
@@ -53,7 +54,7 @@ class Server {
 
             productos.push(producto);
 
-            res.render('productos', { productos });
+            res.render('home', { producto });
         });
     }
 

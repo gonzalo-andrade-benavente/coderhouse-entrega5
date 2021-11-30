@@ -1,7 +1,29 @@
-<h1>Hola productos {{productos.length}}</h1>
+<!-- <h1>Hola productos {{productos.length}}</h1> -->
 
- <ul>
-        {{#each productos}}
-        <li>{{this.title}}</li>
-        {{/each}}
-    </ul>
+<!--
+<ul>
+    {{#each productos}}
+    <li>{{this.title}}</li>
+    {{/each}}
+</ul>
+-->
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Thumbnail</th>
+        </tr>
+    </thead>
+    <tbody>
+         {{#each productos}}
+        <tr>
+            <th scope="row">{{this.id}}</th>
+            <td>{{this.title}}</td>
+            <td>{{this.price}}</td>
+            <td><img width="30" height="30" src="{{this.thumbnail}}" /> </td>
+        </tr>
+         {{/each}}
+    </tbody>
+</table>
